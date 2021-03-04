@@ -1,0 +1,42 @@
+<Doctype html>
+	<meta charset="utf-8">
+	<script>
+		function mostra (frase){
+
+			document.write(frase);
+		}
+
+	function pulalinha () {
+
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	var Nomedotime = prompt ("Informe seu time");
+	var vitorias = parseInt (prompt("Informe o numero de vitorias"));
+	var empates = parseInt (prompt("Informe o número de empates"));
+	
+	var pontos  = vitorias * 3 + empates
+	
+	mostra (" O número de pontos do  " + Nomedotime +" no campeonato é " + pontos);
+	
+	pulalinha ();
+	
+	if (pontos > 63) {
+	
+	mostra ("O seu time está melhor do que o ano passado");
+	
+	}
+	if (pontos < 63) {
+	
+	mostra ("O seu time está pior do que o ano passado");
+	
+	}
+	
+	if (pontos == 63) {
+	
+	
+	mostra ("O seu time está igual do que o ano passado");
+	
+	}
+	</script>

@@ -1,0 +1,43 @@
+<script>
+function pulalinha (){
+	document.write("<br>");
+}
+function mostra (frase){
+	document.write (frase);	
+	pulalinha();
+}
+
+var peso = 84
+var altura = 1.56
+var imc = peso/ (altura*altura);
+mostra ("meu imc é: " + Math.round (imc));
+ 
+ var pesoEli = 74
+ var alturaEli = 1.75
+ var imcEli = pesoEli/ (alturaEli*alturaEli);
+ mostra ("O imc da Eli é " + Math.round (imcEli));
+ 
+ var pesoCris = 57
+ var alturaCris = 1.59
+ var imcCris = pesoCris /(alturaCris*alturaCris)
+  mostra ("O imc da Cris é " + Math.round (imcCris));
+  
+ var pesoSi = 90
+ var alturaSi = 1.62
+ var imcSi = pesoSi / (alturaSi*alturaSi);
+ mostra("O imc da Si é " + Math.round (imcSi));
+ 
+ function calculaIMC (altura, peso){
+	var imc = peso /(altura*altura);
+	return imc
+  }
+ 
+ var pesomãe = 53
+ var alturamãe = 1.52
+ var imcmãe = calculaIMC (alturamãe, pesomãe);
+ mostra ("O imc da minha mãe é " + Math.round (imcmãe))
+ mostra ("Ele ainda está  "  +  Math.round(imcmãe - 18.5) + "  pontos acima de magreza.");
+ 
+ </script>
+
+ 
